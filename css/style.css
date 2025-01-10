@@ -1,0 +1,996 @@
+/* Variables */
+:root {
+    --primary-color: #002F82;
+    --secondary-color: #277A71;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-tc: 'Noto Sans TC', sans-serif;
+    --font-sc: 'Noto Sans SC', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-tc), var(--font-sc), var(--font-montserrat), Arial, sans-serif;
+    color: var(--text-color);
+    padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--font-montserrat), var(--font-tc), var(--font-sc), Arial, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(248, 249, 250, 0.1) !important;
+    z-index: 1030;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(248, 249, 250, 0.9) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.header-logo {
+    height: 40px;
+    width: auto;
+}
+
+.offcanvas-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fff;
+    padding: 0;
+}
+
+.hero .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.hero .row {
+    margin: 0;
+}
+
+.hero .row > div {
+    padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* About Section */
+.about {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.brand-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about-image {
+    width: 80%;
+    margin-left: auto;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-in-out;
+}
+
+.about-image.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+}
+
+.about-text.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Services Section */
+.service-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Teams Section */
+.teams {
+    padding: 5rem 0;
+}
+
+.teams h1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.teams h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 5px;
+    height: 100%;
+    background-color: #B08404;
+}
+
+.teams h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.text-teal {
+    color: #277A71;
+}
+
+.text-gold {
+    color: #B08404;
+    font-style: italic;
+}
+
+.team-image-box {
+    padding: 10px;
+    height: 100%;
+}
+
+.team-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teams-content {
+    margin-top: 4rem;
+}
+
+.teams-content h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.teams-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Facilities Section */
+.facilities {
+    background-color: #E5E4D7;
+    padding: 5rem 0;
+}
+
+.facilities-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+}
+
+.facilities-logo::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #B08404;
+}
+
+.facilities-text {
+    margin-bottom: 2rem;
+}
+
+.facilities h1 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.facilities-image {
+    margin-left: auto;
+}
+
+.facilities-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+    .facilities-logo {
+        margin-bottom: 2rem;
+        height: 200px;
+    }
+    
+    .facilities-text {
+        margin-bottom: 2rem;
+    }
+    
+    .facilities-image {
+        margin-left: 0;
+    }
+}
+
+/* Facilities Section Carousel */
+.facilities .carousel-inner {
+    height: auto;
+}
+
+.facilities .carousel-item {
+    height: 100%;
+}
+
+.facilities .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Facilities Carousel Indicators */
+.facilities .carousel-indicators {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.facilities .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #B08404;
+    opacity: 0.5;
+    margin: 0 5px;
+}
+
+.facilities .carousel-indicators button.active {
+    opacity: 1;
+}
+
+/* Facilities Section */
+.facilities .jan-gold {
+    max-width: 160px;
+}
+
+/* News Section */
+.news {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.news h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.news-swiper {
+    padding: 20px 40px;
+}
+
+.news .card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.news .card:hover {
+    transform: translateY(-10px);
+}
+
+.news .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.news .card-body {
+    padding: 1.5rem;
+}
+
+.news .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.news .card-text {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.news .card-footer {
+    background: none;
+    border-top: 1px solid #eee;
+    padding: 1rem 1.5rem;
+}
+
+/* Swiper Navigation Buttons */
+.news .swiper-button-next,
+.news .swiper-button-prev {
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+}
+
+.news .swiper-button-next:after,
+.news .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    .news .card {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.news h1 {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.news h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #B08404;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #B3B280;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact h2:hover {
+    transform: translateX(10px);
+}
+
+.contact-image {
+    height: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-image:hover {
+    transform: translateX(10px);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.footer-icon {
+    height: 5rem;
+    margin: 0 auto;
+    display: block;
+    filter: brightness(0) saturate(100%) invert(93%) sepia(3%) saturate(458%) hue-rotate(34deg) brightness(92%) contrast(87%);
+}
+
+.footer-logo {
+    max-width: 196px;
+}
+
+.footer-copyright {
+    background-color: #E5E4D7;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #277A71;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .brand-text {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Navigation */
+.offcanvas {
+    background-color: #277A71;
+}
+
+.offcanvas-header .btn-close {
+    filter: brightness(0) invert(1); /* 將關閉按鈕改為白色 */
+}
+
+.offcanvas .nav-link {
+    color: #E5E4D7 !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.offcanvas .nav-link:hover {
+    color: #B08404 !important;
+    transform: translateX(3%);
+}
+
+.offcanvas-title {
+    color: #E5E4D7;
+}
+
+.offcanvas-title a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.offcanvas-title a:hover {
+    transform: translateX(5%);
+}
+
+.navbar-toggler {
+    margin-left: 0;
+    order: 2;
+    border: none;
+    padding: 0;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23B08404' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.services-left {
+    padding: 0;
+}
+
+.services-left .services-image {
+    height: 100%;
+}
+
+.services-left .services-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-right {
+    padding: 3rem;
+}
+
+.services-right h1 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.services-right h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 5px;
+    background-color: #B08404;
+}
+
+.services-right h4 {
+    color: #002F82;
+}
+
+.btn-outline-primary {
+    color: #002F82;
+    border-color: #002F82;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #002F82;
+    border-color: #002F82;
+}
+
+.text-primary {
+    color: #002F82 !important;
+}
+
+/* 添加 Carousel 相關樣式 */
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.about-content {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.team-section {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+}
+
+/* 添加 managers section 相關樣式 */
+.managers-image img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.managers-left {
+    text-align: right;
+}
+
+.managers-left h1 {
+    position: relative;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.managers-left h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #B08404;
+}
+
+.managers-left h4 {
+    color: #002F82;
+}
+
+/* 在小螢幕設備上縮小 about section 的圖片 */
+@media (max-width: 991.98px) {
+    .about .about-image img {
+        width: 70%;
+        height: auto;
+    }
+    
+    /* 確保圖片在縮小時仍然保持置中 */
+    .about .about-image {
+        text-align: center;
+    }
+}
+
+/* 在小螢幕時隱藏原始 logo */
+@media (max-width: 991.98px) {
+    .navbar-brand img.header-logo {
+        content: url('../images/logo.png');
+        height: 30px; /* 調整新 logo 的大小 */
+    }
+}
+
+.services .row {
+    background-color: #E5E4D7;
+    margin: 0;  /* 確保背景色填滿到邊緣 */
+}
+
+.services .container {
+    padding: 0;  /* 移除容器的內距，讓背景色完全填滿 */
+}
+
+.services2-left {
+    padding: 3rem;
+}
+
+.services2-left h1 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.services2-left h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 5px;
+    background-color: #B08404;
+}
+
+.services2-left h4 {
+    color: #002F82;
+}
+
+.services2-right {
+    padding: 48px 0;  /* 添加上下邊距 */
+    background-color: #fff;
+}
+
+.services2-right h2 {
+    text-align: right;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    color: #7A5F08;
+}
+
+.services2-right .services-image {
+    height: 100%;
+    padding: 48px 0;  /* 添加上下邊距 */
+}
+
+.services2 .row {
+    background-color: #E5E4D7;
+    margin: 0;  /* 移除左右邊距 */
+}
+
+.services2 .container {
+    padding: 0;  /* 移除容器的內距 */
+}
+
+.services2 {
+    padding: 0;  /* 移除上下邊距 */
+}
+
+.fade-effect {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.news-grid .card {
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.news-grid .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-grid .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-grid .card-footer {
+    margin-top: auto;
+}
+
+@media (max-width: 991.98px) {
+    .news-grid .col-md-6 {
+        margin-bottom: 30px;
+    }
+}
+
+/* Popup Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1999;
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.popup-overlay.active,
+.popup-container.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-container.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-content {
+    position: relative;
+    padding: 20px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2001;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.popup-header {
+    margin: -20px -20px 20px -20px;
+}
+
+.popup-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.popup-title {
+    color: #002F82;
+    margin-bottom: 15px;
+}
+
+.popup-text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.popup-date {
+    color: #999;
+    font-style: italic;
+}
+
+/* 讓卡片可點擊 */
+.news-grid .card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-grid .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Join Us Section */
+.joinus {
+    background-color: #E5E4D7;
+}
+
+.joinus h4 {
+    color: #002F82;
+}
+
+.joinus h1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding-top: 10px;  /* 為上方線條預留空間 */
+}
+
+.joinus h1::before {
+    content: '';
+    position: absolute;
+    top: 0;  /* 改為頂部 */
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #B08404;
+}
+
+/* Contact Form Styles */
+.fromtoemail {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.fromtoemail h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+    text-align: left;  /* 確保文字左對齊 */
+    max-width: 600px;  /* 與表單同寬 */
+    margin-left: auto;  /* 置中對齊 */
+    margin-right: auto;  /* 置中對齊 */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #E5E4D7;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #666;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 40px;
+    background: none;
+    border: 1px solid #002F82;
+    color: #002F82;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #002F82;
+    color: #fff;
+}
+
+/* Language Selector Styles */
+.language-selector {
+    margin-right: 10px;  /* 減少右邊距 */
+    display: flex;       /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+}
+
+/* Navigation */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto;  /* logo 靠左 */
+}
+
+.navbar-toggler {
+    margin-left: 0;
+    order: 2;
+    border: none;
+    padding: 0;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* 創建一個包裝容器 */
+.nav-right-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;          /* 元素之間的間距 */
+}
+
+.lang-btn {
+    color: #B08404;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lang-btn:hover {
+    color: #002F82;
+}
+
+.lang-btn.active {
+    color: #002F82;
+    font-weight: bold;
+}

@@ -1,0 +1,224 @@
+{
+    "en": {
+        "nav": {
+            "about": "about",
+            "services": "services",
+            "news": "news",
+            "ir": "investor relations",
+            "contact": "contact"
+        },
+        "about": {
+            "title": "A REFRESHED NAME WITH FAMILIAR FACES",
+            "description": "With the extensive industry knowledge and experience in the financial printing market, JAN Financial Press Limited is confident to provide world-class services for our clients in both primary market and secondary market."
+        },
+        "services": {
+            "title": "Financial Processing Services",
+            "description": "In the primary market, IPO prospectuses are the most important documents to connect issuers and investors. As a preferred financial printer, we recognize that accuracy and efficiency in typesetting and translation are crucial and our teams uphold these high standards at all times.",
+            "button": "More"
+        },
+        "contact": {
+            "title": "get in touch",
+            "name": "Name",
+            "company": "Company",
+            "email": "Email",
+            "phone": "Phone",
+            "message": "Message",
+            "submit": "submit"
+        },
+        "joinus": {
+            "title": "join us",
+            "account": {
+                "title": "Account",
+                "description": "Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset."
+            },
+            "proofread": {
+                "title": "Proofread",
+                "description": "Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset."
+            },
+            "typeset": {
+                "title": "Typeset",
+                "description": "Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset."
+            }
+        },
+        "news": {
+            "card1": {
+                "title": "Latest Innovation in Financial Services",
+                "description": "Discover how we're revolutionizing...",
+                "date": "December 13, 2024"
+            },
+            "card2": {
+                "title": "Expanding Our Global Reach",
+                "description": "JAN Financial Press continues to grow...",
+                "date": "December 10, 2024"
+            },
+            "card3": {
+                "title": "Excellence in Client Service",
+                "description": "Our commitment to quality earns us industry recognition and client trust.",
+                "date": "December 7, 2024"
+            },
+            "card4": {
+                "title": "Sustainable Practices Initiative",
+                "description": "Leading the way in environmentally conscious financial printing solutions.",
+                "date": "December 5, 2024"
+            },
+            "card5": {
+                "title": "Digital Transformation Success",
+                "description": "How we're helping clients adapt to the digital age of financial services.",
+                "date": "December 1, 2024"
+            },
+            "card6": {
+                "title": "Sustainable Practices Initiative",
+                "description": "Leading the way in environmentally conscious financial printing solutions.",
+                "date": "December 5, 2024"
+            }
+        }
+    },
+    "tc": {
+        "nav": {
+            "about": "關於我們",
+            "services": "服務",
+            "news": "最新消息",
+            "ir": "投資者關係",
+            "contact": "聯絡我們"
+        },
+        "about": {
+            "title": "新名字 熟悉的面孔",
+            "description": "憑藉在金融印刷市場的豐富行業知識和經驗，安林財經印刷有限公司有信心為一級市場和二級市場的客戶提供世界級服務。"
+        },
+        "services": {
+            "title": "金融處理服務",
+            "description": "在一級市場中，招股章程是連接發行人和投資者的最重要文件。作為首選的財經印刷商，我們深知排版和翻譯的準確性和效率至關重要，我們的團隊始終堅持這些高標準。",
+            "button": "更多"
+        },
+        "contact": {
+            "title": "聯絡我們",
+            "name": "姓名",
+            "company": "公司",
+            "email": "電郵",
+            "phone": "電話",
+            "message": "訊息",
+            "submit": "提交"
+        },
+        "joinus": {
+            "title": "加入我們",
+            "account": {
+                "title": "會計",
+                "description": "與只注重技術的同行不同，我們認為有才能的員工是最寶貴的資產。"
+            },
+            "proofread": {
+                "title": "校對",
+                "description": "與只注重技術的同行不同，我們認為有才能的員工是最寶貴的資產。"
+            },
+            "typeset": {
+                "title": "排版",
+                "description": "與只注重技術的同行不同，我們認為有才能的員工是最寶貴的資產。"
+            }
+        },
+        "news": {
+            "card1": {
+                "title": "金融服務的最新創新",
+                "description": "探索我們如何革新...",
+                "date": "2024年12月13日"
+            },
+            "card2": {
+                "title": "擴展全球業務",
+                "description": "安林財經印刷持續成長...",
+                "date": "2024年12月10日"
+            },
+            "card3": {
+                "title": "卓越的客戶服務",
+                "description": "我們對品質的承諾贏得了業界認可和客戶信任。",
+                "date": "2024年12月7日"
+            },
+            "card4": {
+                "title": "可持續發展實踐計劃",
+                "description": "引領環保金融印刷解決方案的發展。",
+                "date": "2024年12月5日"
+            },
+            "card5": {
+                "title": "數碼轉型成功",
+                "description": "我們如何幫助客戶適應金融服務的數碼時代。",
+                "date": "2024年12月1日"
+            },
+            "card6": {
+                "title": "可持續發展實踐",
+                "description": "引領環保金融印刷解決方案的發展。",
+                "date": "2024年12月5日"
+            }
+        }
+    },
+    "sc": {
+        "nav": {
+            "about": "关于我们",
+            "services": "服务",
+            "news": "最新消息",
+            "ir": "投资者关系",
+            "contact": "联络我们"
+        },
+        "about": {
+            "title": "新名字 熟悉的面孔",
+            "description": "凭借在金融印刷市场的丰富行业知识和经验，安林财经印刷有限公司有信心为一级市场和二级市场的客户提供世界级服务。"
+        },
+        "services": {
+            "title": "金融处理服务",
+            "description": "在一级市场中，招股章程是连接发行人和投资者的最重要文件。作为首选的财经印刷商，我们深知排版和翻译的准确性和效率至关重要，我们的团队始终坚持这些高标准。",
+            "button": "更多"
+        },
+        "contact": {
+            "title": "联络我们",
+            "name": "姓名",
+            "company": "公司",
+            "email": "邮箱",
+            "phone": "电话",
+            "message": "讯息",
+            "submit": "提交"
+        },
+        "joinus": {
+            "title": "加入我们",
+            "account": {
+                "title": "会计",
+                "description": "与只注重技术的同行不同，我们认为有才能的员工是最宝贵的资产。"
+            },
+            "proofread": {
+                "title": "校对",
+                "description": "与只注重技术的同行不同，我们认为有才能的员工是最宝贵的资产。"
+            },
+            "typeset": {
+                "title": "排版",
+                "description": "与只注重技术的同行不同，我们认为有才能的员工是最宝贵的资产。"
+            }
+        },
+        "news": {
+            "card1": {
+                "title": "金融服务的最新创新",
+                "description": "探索我们如何革新...",
+                "date": "2024年12月13日"
+            },
+            "card2": {
+                "title": "扩展全球业务",
+                "description": "安林财经印刷持续成长...",
+                "date": "2024年12月10日"
+            },
+            "card3": {
+                "title": "卓越的客户服务",
+                "description": "我们对品质的承诺赢得了业界认可和客户信任。",
+                "date": "2024年12月7日"
+            },
+            "card4": {
+                "title": "可持续发展实践计划",
+                "description": "引领环保金融印刷解决方案的发展。",
+                "date": "2024年12月5日"
+            },
+            "card5": {
+                "title": "数字转型成功",
+                "description": "我们如何帮助客户适应金融服务的数字时代。",
+                "date": "2024年12月1日"
+            },
+            "card6": {
+                "title": "可持续发展实践",
+                "description": "引领环保金融印刷解决方案的发展。",
+                "date": "2024年12月5日"
+            }
+        }
+    }
+}
