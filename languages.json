@@ -71,6 +71,9 @@
                 "description": "Leading the way in environmentally conscious financial printing solutions.",
                 "date": "December 5, 2024"
             }
+        },
+        "teams": {
+            "description": "Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle."
         }
     },
     "tc": {
@@ -145,6 +148,9 @@
                 "description": "引領環保金融印刷解決方案的發展。",
                 "date": "2024年12月5日"
             }
+        },
+        "teams": {
+            "description": "收到客戶的工作要求後，客戶服務團隊將擔任主導角色，負責協調公司各部門之間的工作，確保所有任務都能準時完成，過程順暢無憂。"
         }
     },
     "sc": {
@@ -219,6 +225,9 @@
                 "description": "引领环保金融印刷解决方案的发展。",
                 "date": "2024年12月5日"
             }
+        },
+        "teams": {
+            "description": "收到客户的工作要求后，客户服务团队将担任主导角色，负责协调公司各部门之间的工作，确保所有任务都能准时完成，过程顺畅无忧。"
         }
     }
 }

@@ -62,6 +62,9 @@ h2 {
 .hero {
     background-color: #fff;
     padding: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero .container {
@@ -81,6 +84,24 @@ h2 {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* 特定頁面的 hero 圖片最大寬度限制 */
+.contact-hero img,
+.services-hero img,
+.news-hero img {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 小螢幕時的 hero section 上邊距 */
+@media (max-width: 768px) {
+    .contact-hero,
+    .services-hero,
+    .news-hero {
+        padding-top: 10vh;
+    }
 }
 
 /* About Section */

@@ -98,6 +98,7 @@
                         </div>
                         <div class="teams-content mt-4">
                             <img src="images/index_teams2.png" class="img-fluid">
+                            <p data-translate="teams.description">Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle.</p>
                         </div>
                     </div>
                 </div>
@@ -309,6 +310,16 @@
     
     <!-- 添加導航欄滾動效果和圖片淡入效果 -->
     <script>
+        // 頁面載入時立即觸發 About Section 動畫
+        document.addEventListener('DOMContentLoaded', function() {
+            const aboutImage = document.querySelector('.about-image');
+            const aboutText = document.querySelector('.about-text');
+            
+            // 添加淡入效果
+            aboutImage.classList.add('fade-in');
+            aboutText.classList.add('fade-in');
+        });
+
         window.addEventListener('scroll', function() {
             // 導航欄效果
             const navbar = document.querySelector('.navbar');
@@ -316,18 +327,6 @@
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
-            }
-
-            // about section 動畫效果
-            const aboutSection = document.querySelector('#about');
-            const aboutImage = document.querySelector('.about-image');
-            const aboutText = document.querySelector('.about-text');
-            const rect = aboutSection.getBoundingClientRect();
-            
-            // 當 about section 進入視窗時
-            if (rect.top <= window.innerHeight * 0.75 && rect.bottom >= 0) {
-                aboutImage.classList.add('fade-in');
-                aboutText.classList.add('fade-in');
             }
         });
     </script>
