@@ -73,7 +73,22 @@
             }
         },
         "teams": {
-            "description": "Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle."
+            "description": "Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset.",
+            "sales": {
+                "description": "Always being the very first to approach clients. The team's top priority is to listen to clients so that their needs can be identified, understood, and addressed in a timely manner."
+            },
+            "creative": {
+                "description": "Creativity and passion are two big words for the team. Designers from different backgrounds always amaze clients with the boundless novelty in their design concepts."
+            },
+            "account": {
+                "description": "Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle."
+            },
+            "desktop": {
+                "description": "Experience makes an enormous contribution to accuracy and which in turn speeds up the whole typesetting process."
+            },
+            "translation": {
+                "description": "As clients from different geographical regions have varied demand for translation services with different language pairs and areas of expertise, we are dedicated to working with our translation partners to accommodate our clients' individual needs."
+            }
         }
     },
     "tc": {
@@ -150,7 +165,22 @@
             }
         },
         "teams": {
-            "description": "收到客戶的工作要求後，客戶服務團隊將擔任主導角色，負責協調公司各部門之間的工作，確保所有任務都能準時完成，過程順暢無憂。"
+            "description": "有別於只注重技術的同業，我們視人才為最寶貴的資產。",
+            "sales": {
+                "description": "永遠走在最前線接觸客戶。團隊的首要任務是聆聽客戶的需求，確保能夠及時識別、理解並滿足客戶的要求。"
+            },
+            "creative": {
+                "description": "創意和熱情是團隊的兩大特色。來自不同背景的設計師以其無限創新的設計理念，總能讓客戶感到驚喜。"
+            },
+            "account": {
+                "description": "收到客戶的工作要求後，客戶服務團隊將擔任主導角色，負責協調公司各部門之間的工作，確保所有任務都能準時完成，過程順暢無憂。"
+            },
+            "desktop": {
+                "description": "豐富的經驗為準確性作出巨大貢獻，從而加快整個排版過程。"
+            },
+            "translation": {
+                "description": "來自不同地區的客戶對翻譯服務有著不同的語言組合和專業領域需求，我們致力於與翻譯合作夥伴合作，以滿足客戶的個別需求。"
+            }
         }
     },
     "sc": {
@@ -227,7 +257,22 @@
             }
         },
         "teams": {
-            "description": "收到客户的工作要求后，客户服务团队将担任主导角色，负责协调公司各部门之间的工作，确保所有任务都能准时完成，过程顺畅无忧。"
+            "description": "有别于只注重技术的同业，我们视人才为最宝贵的资产。",
+            "sales": {
+                "description": "永远走在最前线接触客户。团队的首要任务是聆听客户的需求，确保能够及时识别、理解并满足客户的要求。"
+            },
+            "creative": {
+                "description": "创意和热情是团队的两大特色。来自不同背景的设计师以其无限创新的设计理念，总能让客户感到惊喜。"
+            },
+            "account": {
+                "description": "收到客户的工作要求后，客户服务团队将担任主导角色，负责协调公司各部门之间的工作，确保所有任务都能准时完成，过程顺畅无忧。"
+            },
+            "desktop": {
+                "description": "丰富的经验为准确性作出巨大贡献，从而加快整个排版过程。"
+            },
+            "translation": {
+                "description": "来自不同地区的客户对翻译服务有着不同的语言组合和专业领域需求，我们致力于与翻译合作伙伴合作，以满足客户的个别需求。"
+            }
         }
     }
 }

@@ -84,21 +84,12 @@
                         </div>
                         <div class="col-6 mb-4">
                             <div class="team-image-box">
-                                <div id="teamCarouselE" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="images/img1.png" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/img2.png" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/team1.jpg" alt="" class="img-fluid" onclick="updateTeamContent('sales')">
                             </div>
                         </div>
                         <div class="teams-content mt-4">
-                            <img src="images/index_teams2.png" class="img-fluid">
-                            <p data-translate="teams.description">Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle.</p>
+                            <h4 id="teamTitle">Our Teams</h4>
+                            <p id="teamDescription" data-translate="teams.description">Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset.</p>
                         </div>
                     </div>
                 </div>
@@ -107,58 +98,22 @@
                     <div class="row">
                         <div class="col-6 mb-4">
                             <div class="team-image-box">
-                                <div id="teamCarouselA" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="images/img1.png" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/img2.png" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/team2.jpg" alt="" class="img-fluid" onclick="updateTeamContent('creative')">
                             </div>
                         </div>
                         <div class="col-6 mb-4">
                             <div class="team-image-box">
-                                <div id="teamCarouselB" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="images/img1.png" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/img2.png" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/team3.jpg" alt="" class="img-fluid" onclick="updateTeamContent('account')">
                             </div>
                         </div>
                         <div class="col-6 mb-4">
                             <div class="team-image-box">
-                                <div id="teamCarouselC" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="images/img1.png" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/img2.png" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/team4.jpg" alt="" class="img-fluid" onclick="updateTeamContent('desktop')">
                             </div>
                         </div>
                         <div class="col-6 mb-4">
                             <div class="team-image-box">
-                                <div id="teamCarouselD" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="images/img1.png" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/img2.png" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/team5.jpg" alt="" class="img-fluid" onclick="updateTeamContent('translation')">
                             </div>
                         </div>
                     </div>
@@ -240,7 +195,11 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <img src="images/icon/gps.png" alt="Location" class="footer-icon">
-                    <p class="mt-2">22/F, Euro Trade Centre,<br>13-14 Connaught Road Central,<br>Central, Hong Kong</p>
+                    <p class="mt-2">
+                        <a href="https://maps.app.goo.gl/ouUcW6og7sTg78D77" target="_blank" rel="noopener noreferrer">
+                            22/F, Euro Trade Centre,<br>13-14 Connaught Road Central,<br>Central, Hong Kong
+                        </a>
+                    </p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="images/icon/email.png" alt="Email" class="footer-icon">
@@ -329,6 +288,44 @@
                 navbar.classList.remove('scrolled');
             }
         });
+    </script>
+
+    <!-- 添加 Teams Section 的點擊事件處理 -->
+    <script>
+        function updateTeamContent(team) {
+            const title = document.getElementById('teamTitle');
+            const description = document.getElementById('teamDescription');
+            
+            if (team === 'sales') {
+                title.textContent = 'SALES & MARKETING';
+                description.textContent = "Always being the very first to approach clients. The team's top priority is to listen to clients so that their needs can be identified, understood, and addressed in a timely manner.";
+                description.setAttribute('data-translate', 'teams.sales.description');
+            } else if (team === 'creative') {
+                title.textContent = 'CREATIVE & DESIGN';
+                description.textContent = "Creativity and passion are two big words for the team. Designers from different backgrounds always amaze clients with the boundless novelty in their design concepts.";
+                description.setAttribute('data-translate', 'teams.creative.description');
+            } else if (team === 'account') {
+                title.textContent = 'ACCOUNT SERVICING';
+                description.textContent = "Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle.";
+                description.setAttribute('data-translate', 'teams.account.description');
+            } else if (team === 'desktop') {
+                title.textContent = 'DESKTOP PUBLISHING';
+                description.textContent = "Experience makes an enormous contribution to accuracy and which in turn speeds up the whole typesetting process.";
+                description.setAttribute('data-translate', 'teams.desktop.description');
+            } else if (team === 'translation') {
+                title.textContent = 'TRANSLATION';
+                description.textContent = "As clients from different geographical regions have varied demand for translation services with different language pairs and areas of expertise, we are dedicated to working with our translation partners to accommodate our clients' individual needs.";
+                description.setAttribute('data-translate', 'teams.translation.description');
+            } else {
+                title.textContent = 'Our Teams';
+                description.textContent = "Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset.";
+                description.setAttribute('data-translate', 'teams.description');
+            }
+            
+            // 重新應用當前語言設置
+            const currentLang = localStorage.getItem('language') || 'en';
+            setLanguage(currentLang);
+        }
     </script>
 </body>
 </html>
