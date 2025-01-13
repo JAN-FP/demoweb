@@ -470,13 +470,13 @@ h2 {
 /* Footer links */
 .footer a {
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: opacity 0.3s ease;
 }
 
 .footer a:hover {
     color: white;
-    opacity: 0.8;
+    text-decoration: underline !important;
 }
 
 .footer-icon {
