@@ -162,6 +162,20 @@ h2 {
     padding: 5rem 0;
 }
 
+/* Teams images hover effect */
+.team-image-box img {
+    transition: transform 0.3s ease;
+}
+
+.team-image-box img:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.teams-content h4 {
+    color: #277A71;
+}
+
 .teams h1 {
     position: relative;
     display: inline-block;
@@ -451,6 +465,18 @@ h2 {
 .footer {
     background-color: var(--secondary-color);
     color: white;
+}
+
+/* Footer links */
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    color: white;
+    opacity: 0.8;
 }
 
 .footer-icon {
