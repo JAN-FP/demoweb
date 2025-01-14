@@ -83,12 +83,12 @@
         <div class="popup-content">
             <button class="popup-close">&times;</button>
             <div class="popup-header">
-                <img src="" alt="" class="popup-img">
+                
             </div>
             <div class="popup-body">
-                <h2 class="popup-title"></h2>
-                <p class="popup-text"></p>
-                <div class="popup-date"></div>
+                <div class="popup-card-body">
+                    <!-- Card content will be cloned here -->
+                </div>
             </div>
         </div>
     </div>
@@ -160,16 +160,12 @@
                     
                     // 添加點擊事件
                     card.addEventListener('click', () => {
-                        const img = card.querySelector('.card-img-top').src;
-                        const title = card.querySelector('.card-title').textContent;
-                        const text = card.querySelector('.card-text').textContent;
-                        const date = card.querySelector('.text-muted').textContent;
+                        const cardContent = card.cloneNode(true);
                         
                         // 更新彈出視窗內容
-                        document.querySelector('.popup-img').src = img;
-                        document.querySelector('.popup-title').textContent = title;
-                        document.querySelector('.popup-text').textContent = text;
-                        document.querySelector('.popup-date').textContent = date;
+                        const popupCardBody = document.querySelector('.popup-card-body');
+                        popupCardBody.innerHTML = '';
+                        popupCardBody.appendChild(cardContent);
                         
                         // 顯示彈出視窗
                         document.querySelector('.popup-overlay').classList.add('active');

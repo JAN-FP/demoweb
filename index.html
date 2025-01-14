@@ -125,7 +125,7 @@
     <!-- Facilities Section -->
     <section id="facilities" class="facilities py-5">
         <div class="container">
-            <div class="row  justify-content-end">
+            <div class="row justify-content-end">
                 <!-- 左側標題區 -->
                 <div class="col-lg-3 col-md-3 facilities-logo order-lg-2 order-md-1">
                     <img src="images/jan_yellow.png" alt="JAN" class="img-fluid mb-4 jan-gold"> 
@@ -143,10 +143,10 @@
                                 <div id="facilityCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="images/temp_photo1.png" alt="" class="img-fluid">
+                                            <img src="images/temp_photo1.png" alt="" class="img-fluid facility-trigger" onclick="openPhotoAlbum()">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="images/temp_photo2.png" alt="" class="img-fluid">
+                                            <img src="images/temp_photo2.png" alt="" class="img-fluid facility-trigger" onclick="openPhotoAlbum()">
                                         </div>
                                     </div>
                                     <!-- 添加點選控制 -->
@@ -162,6 +162,17 @@
             </div>
         </div>
     </section>
+
+    <!-- Photo Album Popup -->
+    <div class="photo-album-overlay"></div>
+    <div class="photo-album-container">
+        <button class="photo-album-close">&times;</button>
+        <button class="photo-album-prev">&lt;</button>
+        <button class="photo-album-next">&gt;</button>
+        <div class="photo-album-content">
+            <img src="" alt="" class="photo-album-img">
+        </div>
+    </div>
 
     <!-- News Section -->
     <section id="news" class="news py-5">
@@ -326,6 +337,54 @@
             const currentLang = localStorage.getItem('language') || 'en';
             setLanguage(currentLang);
         }
+    </script>
+
+    <!-- 添加相簿控制腳本 -->
+    <script>
+        const photos = [
+            'images/album/photo01.jpg',
+            'images/album/photo02.jpg',
+            'images/album/photo03.jpg',
+            'images/album/photo04.jpg',
+            'images/album/photo05.jpg',
+            'images/album/photo06.jpg'
+        ];
+        
+        let currentPhotoIndex = 0;
+        
+        function openPhotoAlbum() {
+            currentPhotoIndex = 0;
+            updatePhotoAlbum();
+            document.querySelector('.photo-album-overlay').classList.add('active');
+            document.querySelector('.photo-album-container').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePhotoAlbum() {
+            document.querySelector('.photo-album-overlay').classList.remove('active');
+            document.querySelector('.photo-album-container').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        function updatePhotoAlbum() {
+            document.querySelector('.photo-album-img').src = photos[currentPhotoIndex];
+        }
+        
+        function nextPhoto() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            updatePhotoAlbum();
+        }
+        
+        function prevPhoto() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+            updatePhotoAlbum();
+        }
+        
+        // 添加事件監聽器
+        document.querySelector('.photo-album-close').addEventListener('click', closePhotoAlbum);
+        document.querySelector('.photo-album-overlay').addEventListener('click', closePhotoAlbum);
+        document.querySelector('.photo-album-next').addEventListener('click', nextPhoto);
+        document.querySelector('.photo-album-prev').addEventListener('click', prevPhoto);
     </script>
 </body>
 </html>
