@@ -8,12 +8,12 @@
             "contact": "contact"
         },
         "about": {
-            "title": "A REFRESHED NAME WITH FAMILIAR FACES",
-            "description": "With the extensive industry knowledge and experience in the financial printing market, JAN Financial Press Limited is confident to provide world-class services for our clients in both primary market and secondary market."
+            "title": "A FRESHED NAME FOUNDED BY FAMILIAR FACES",
+            "description": "With extensive knowledge and experience in the financial printing industry, JAN Financial Press Limited provides first-class servicing to our clients who seek for one-stop printing solutions both found in primary and secondary markets."
         },
         "services": {
-            "title": "Financial Processing Services",
-            "description": "In the primary market, IPO prospectuses are the most important documents to connect issuers and investors. As a preferred financial printer, we recognize that accuracy and efficiency in typesetting and translation are crucial and our teams uphold these high standards at all times.",
+            "title": "Financial Printing Services",
+            "description": "JAN understands the significance of documents being precisely printed and promptly delivered to our clients and their shareholders, and we realize it all comes down to a fantastic team that help build this foundation - we are proud to have top-notch staff with years of financial printing experience.\n\nInitial public offering (IPO) prospectus, a crucial example in the primary market of financial printing field, is one of the important documents that connects issuers and investors. Recently, one of our clients, UBoT Holding Limited (HKEx stock code: 8529), is the first company to be listed on GEM board in three years since its rules were eased at the start of the year.\n\nAnnual reports and ESG reports, shareholders' circulars, announcements and notices etc., are examples of documents in the secondary market, which are regular disclosures of printed and electronic documents from our over 100 active clients [TBC] of listed companies.",
             "button": "More"
         },
         "contact": {
@@ -73,21 +73,21 @@
             }
         },
         "teams": {
-            "description": "Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset.",
+            "description": "JAN values the significance of obtaining talented staff as the most impeccable asset of our company.",
             "sales": {
-                "description": "Always being the very first to approach clients. The team's top priority is to listen to clients so that their needs can be identified, understood, and addressed in a timely manner."
+                "description": "Our sales & marketing team has decades of experiences specializing in project management and connection with clients, seeking professional printing solutions for them via communicating with different departments, in order to achieve the optimum results upon clients' needs. Our swift response means to always prioritize our clients first and foremost."
             },
             "creative": {
-                "description": "Creativity and passion are two big words for the team. Designers from different backgrounds always amaze clients with the boundless novelty in their design concepts."
+                "description": "Our design team provides creative ideas to our clients, as well as to liaise with different departments within the company in order to bring the best possible outcome upon clients' requests. Our team also assist in our company's internal projects such as traditional Chinese New Year's Fai Chun (揮春) and calendars."
             },
             "account": {
-                "description": "Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle."
+                "description": "Our accounting servicing team takes pride in well-mannered coordination not only with clients but also within our company, as well as liaising with our translation vendors. We take lead in ensuring all tasks be completed on time, meeting tight schedules and delivering accurate e-submission on a daily basis. Our team has also shown versatile quality in order to meet with new requirements and mandate as new sphere of regulations has emerged due to the current change of economical scope."
             },
             "desktop": {
-                "description": "Experience makes an enormous contribution to accuracy and which in turn speeds up the whole typesetting process."
+                "description": "Our DTP team has years of typesetting experience in financial printing domain. With up-to-date software implemented from time to time, together with the assistance from our IT department, our team is dedicated to prompt delivery of documentations to meet deadline submissions."
             },
             "translation": {
-                "description": "As clients from different geographical regions have varied demand for translation services with different language pairs and areas of expertise, we are dedicated to working with our translation partners to accommodate our clients' individual needs."
+                "description": "Our proofread team is known for being detail-oriented, precise and attentive. We pursue consistency and accuracy in clients' documents. Attention to detail, submissive yet proficient to offer better solutions to our clients - we act as the semi-final gatekeeper to reassure the quality of work, especially showing highly competence to work under tight schedule whilst ability in meeting deadlines as required by HKEx regulations."
             }
         }
     },
@@ -101,11 +101,11 @@
         },
         "about": {
             "title": "新名字 熟悉的面孔",
-            "description": "憑藉在金融印刷市場的豐富行業知識和經驗，安林財經印刷有限公司有信心為一級市場和二級市場的客戶提供世界級服務。"
+            "description": "憑藉在金融印刷行業的豐富知識和經驗，安林財經印刷有限公司為尋求一站式印刷解決方案的客戶提供一流的服務，涵蓋一級和二級市場。"
         },
         "services": {
-            "title": "金融處理服務",
-            "description": "在一級市場中，招股章程是連接發行人和投資者的最重要文件。作為首選的財經印刷商，我們深知排版和翻譯的準確性和效率至關重要，我們的團隊始終堅持這些高標準。",
+            "title": "財經印刷服務",
+            "description": "安林深明文件的準確印刷和及時交付對我們的客戶和其股東的重要性，而這一切都歸功於幫助建立這個基礎的優秀團隊 - 我們很自豪擁有具有多年財經印刷經驗的頂尖員工。\n\n首次公開招股（IPO）招股章程是財經印刷領域一級市場中的重要例子，是連接發行人和投資者的重要文件之一。最近，我們的客戶之一，UBoT Holding Limited（港交所股份代號：8529）是自年初放寬GEM板規則以來三年內首家在GEM板上市的公司。\n\n年報和ESG報告、股東通函、公告和通知等，是二級市場文件的例子，這些都是我們超過100家活躍上市公司客戶[待確認]的定期印刷和電子文件披露。",
             "button": "更多"
         },
         "contact": {
@@ -165,21 +165,21 @@
             }
         },
         "teams": {
-            "description": "有別於只注重技術的同業，我們視人才為最寶貴的資產。",
+            "description": "安林重視人才，視其為公司最完美的資產。",
             "sales": {
-                "description": "永遠走在最前線接觸客戶。團隊的首要任務是聆聽客戶的需求，確保能夠及時識別、理解並滿足客戶的要求。"
+                "description": "我們的銷售和市場團隊擁有數十年的項目管理和客戶聯繫經驗，通過與不同部門溝通，為客戶尋求專業的印刷解決方案，以實現客戶需求的最佳結果。我們的快速響應意味著始終將客戶放在首位。"
             },
             "creative": {
-                "description": "創意和熱情是團隊的兩大特色。來自不同背景的設計師以其無限創新的設計理念，總能讓客戶感到驚喜。"
+                "description": "我們的設計團隊為客戶提供創意想法，並與公司內部不同部門聯繫，以實現客戶要求的最佳可能結果。我們的團隊還協助公司內部項目，如農曆新年揮春和日曆等。"
             },
             "account": {
-                "description": "收到客戶的工作要求後，客戶服務團隊將擔任主導角色，負責協調公司各部門之間的工作，確保所有任務都能準時完成，過程順暢無憂。"
+                "description": "Our accounting servicing team takes pride in well-mannered coordination not only with clients but also within our company, as well as liaising with our translation vendors. We take lead in ensuring all tasks be completed on time, meeting tight schedules and delivering accurate e-submission on a daily basis. Our team has also shown versatile quality in order to meet with new requirements and mandate as new sphere of regulations has emerged due to the current change of economical scope."
             },
             "desktop": {
-                "description": "豐富的經驗為準確性作出巨大貢獻，從而加快整個排版過程。"
+                "description": "我們的桌面排版團隊在財經印刷領域擁有多年的排版經驗。通過不時更新的軟件實施，以及資訊科技部門的協助，我們的團隊致力於準時交付文件以滿足截止日期要求。"
             },
             "translation": {
-                "description": "來自不同地區的客戶對翻譯服務有著不同的語言組合和專業領域需求，我們致力於與翻譯合作夥伴合作，以滿足客戶的個別需求。"
+                "description": "我們的校對團隊以注重細節、精確和專注而聞名。我們追求客戶文件的一致性和準確性。注重細節，謙遜但精通於為客戶提供更好的解決方案 - 我們作為最後把關者確保工作質量，特別是在緊湊的時間表下展現高度能力，同時能夠滿足港交所規定的截止期限。"
             }
         }
     },
@@ -193,11 +193,11 @@
         },
         "about": {
             "title": "新名字 熟悉的面孔",
-            "description": "凭借在金融印刷市场的丰富行业知识和经验，安林财经印刷有限公司有信心为一级市场和二级市场的客户提供世界级服务。"
+            "description": "凭借在金融印刷行业的丰富知识和经验，安林财经印刷有限公司为寻求一站式印刷解决方案的客户提供一流的服务，涵盖一级和二级市场。"
         },
         "services": {
-            "title": "金融处理服务",
-            "description": "在一级市场中，招股章程是连接发行人和投资者的最重要文件。作为首选的财经印刷商，我们深知排版和翻译的准确性和效率至关重要，我们的团队始终坚持这些高标准。",
+            "title": "财经印刷服务",
+            "description": "安林深明文件的准确印刷和及时交付对我们的客户和其股东的重要性，而这一切都归功于帮助建立这个基础的优秀团队 - 我们很自豪拥有具有多年财经印刷经验的顶尖员工。\n\n首次公开招股（IPO）招股章程是财经印刷领域一级市场中的重要例子，是连接发行人和投资者的重要文件之一。最近，我们的客户之一，UBoT Holding Limited（港交所股份代号：8529）是自年初放宽GEM板规则以来三年内首家在GEM板上市的公司。\n\n年报和ESG报告、股东通函、公告和通知等，是二级市场文件的例子，这些都是我们超过100家活跃上市公司客户[待确认]的定期印刷和电子文件披露。",
             "button": "更多"
         },
         "contact": {
@@ -257,21 +257,21 @@
             }
         },
         "teams": {
-            "description": "有别于只注重技术的同业，我们视人才为最宝贵的资产。",
+            "description": "安林重视人才，视其为公司最完美的资产。",
             "sales": {
-                "description": "永远走在最前线接触客户。团队的首要任务是聆听客户的需求，确保能够及时识别、理解并满足客户的要求。"
+                "description": "我们的销售和市场团队拥有数十年的项目管理和客户联系经验，通过与不同部门沟通，为客户寻求专业的印刷解决方案，以实现客户需求的最佳结果。我们的快速响应意味着始终将客户放在首位。"
             },
             "creative": {
-                "description": "创意和热情是团队的两大特色。来自不同背景的设计师以其无限创新的设计理念，总能让客户感到惊喜。"
+                "description": "我们的设计团队为客户提供创意想法，并与公司内部不同部门联系，以实现客户要求的最佳可能结果。我们的团队还协助公司内部项目，如农历新年挥春和日历等。"
             },
             "account": {
-                "description": "收到客户的工作要求后，客户服务团队将担任主导角色，负责协调公司各部门之间的工作，确保所有任务都能准时完成，过程顺畅无忧。"
+                "description": "Our accounting servicing team takes pride in well-mannered coordination not only with clients but also within our company, as well as liaising with our translation vendors. We take lead in ensuring all tasks be completed on time, meeting tight schedules and delivering accurate e-submission on a daily basis. Our team has also shown versatile quality in order to meet with new requirements and mandate as new sphere of regulations has emerged due to the current change of economical scope."
             },
             "desktop": {
-                "description": "丰富的经验为准确性作出巨大贡献，从而加快整个排版过程。"
+                "description": "我们的桌面排版团队在财经印刷领域拥有多年的排版经验。通过不时更新的软件实施，以及信息科技部门的协助，我们的团队致力于准时交付文件以满足截止日期要求。"
             },
             "translation": {
-                "description": "来自不同地区的客户对翻译服务有着不同的语言组合和专业领域需求，我们致力于与翻译合作伙伴合作，以满足客户的个别需求。"
+                "description": "我们的校对团队以注重细节、精确和专注而闻名。我们追求客户文件的一致性和准确性。注重细节，谦逊但精通于为客户提供更好的解决方案 - 我们作为最后把关者确保工作质量，特别是在紧凑的时间表下展现高度能力，同时能够满足港交所规定的截止期限。"
             }
         }
     }

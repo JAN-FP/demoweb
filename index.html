@@ -41,8 +41,8 @@
                 <div class="col-lg-7">
                     <div class="about-text">
                         <h1 data-translate="about.section">about</h1>
-                        <h4 data-translate="about.title">A REFRESHED NAME WITH FAMILIAR FACES</h4>
-                        <p data-translate="about.description">With the extensive industry knowledge and experience in the financial printing market, JAN Financial Press Limited is confident to provide world-class services for our clients in both primary market and secondary market.</p>
+                        <h4 data-translate="about.title">A FRESHED NAME FOUNDED BY FAMILIAR FACES</h4>
+                        <p data-translate="about.description">With extensive knowledge and experience in the financial printing industry, JAN Financial Press Limited provides first-class servicing to our clients who seek for one-stop printing solutions both found in primary and secondary markets.</p>
                     </div>
                 </div>
             </div>
@@ -62,9 +62,12 @@
                 <!-- 右側內容 -->
                 <div class="col-lg-6 services-right">
                     <h1 data-translate="services.section">services</h1>
-                    <h4 data-translate="services.title">Financial Processing Services</h4>
-                    <p data-translate="services.description">In the primary market, IPO prospectuses are the most important documents to connect issuers and investors. As a preferred financial printer, we recognize that accuracy and efficiency in typesetting and translation are crucial and our teams uphold these high standards at all times.</p>
-                    <a href="#" class="btn btn-outline-primary" data-translate="services.button">More</a>
+                    <h4 data-translate="services.title">Financial Printing Services</h4>
+                    <p data-translate="services.description">JAN understands the significance of documents being precisely printed and promptly delivered to our clients and their shareholders, and we realize it all comes down to a fantastic team that help build this foundation - we are proud to have top-notch staff with years of financial printing experience.<br><br>
+                        Initial public offering (IPO) prospectus, a crucial example in the primary market of financial printing field, is one of the important documents that connects issuers and investors. Recently, one of our clients, UBoT Holding Limited (HKEx stock code: 8529), is the first company to be listed on GEM board in three years since its rules were eased at the start of the year. <br><br>
+                        Annual reports and ESG reports, shareholders' circulars, announcements and notices etc., are examples of documents in the secondary market, which are regular disclosures of printed and electronic documents from our over 100 active clients [TBC] of listed companies.
+                    </p>
+                    <a href="services.html" class="btn btn-outline-primary" data-translate="services.button">More</a>
                 </div>
             </div>
         </div>
@@ -79,7 +82,7 @@
                     <div class="row">
                         <div class="col-6 mb-4">
                             <div class="team-image-box">
-                                <img src="images/index_teams.png" alt="" class="img-fluid">
+                                <img src="images/index_teams.png" alt="" class="img-fluid" onclick="updateTeamContent('teams')">
                             </div>
                         </div>
                         <div class="col-6 mb-4">
@@ -89,7 +92,7 @@
                         </div>
                         <div class="teams-content mt-4">
                             <h4 id="teamTitle">Our Teams</h4>
-                            <p id="teamDescription" data-translate="teams.description">Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset.</p>
+                            <p id="teamDescription" data-translate="teams.description">JAN values the significance of obtaining talented staff as the most impeccable asset of our company.</p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +116,7 @@
                         </div>
                         <div class="col-6 mb-4">
                             <div class="team-image-box">
-                                <img src="images/team5.jpg" alt="" class="img-fluid" onclick="updateTeamContent('translation')">
+                                <img src="images/team5.jpg" alt="" class="img-fluid" onclick="updateTeamContent('proofread')">
                             </div>
                         </div>
                     </div>
@@ -309,27 +312,27 @@
             
             if (team === 'sales') {
                 title.textContent = 'SALES & MARKETING';
-                description.textContent = "Always being the very first to approach clients. The team's top priority is to listen to clients so that their needs can be identified, understood, and addressed in a timely manner.";
+                description.textContent = "Our sales & marketing team has decades of experiences specializing in project management and connection with clients, seeking professional printing solutions for them via communicating with different departments, in order to achieve the optimum results upon clients' needs. Our swift response means to always prioritize our clients first and foremost.";
                 description.setAttribute('data-translate', 'teams.sales.description');
             } else if (team === 'creative') {
                 title.textContent = 'CREATIVE & DESIGN';
-                description.textContent = "Creativity and passion are two big words for the team. Designers from different backgrounds always amaze clients with the boundless novelty in their design concepts.";
+                description.textContent = "Our design team provides creative ideas to our clients, as well as to liaise with different departments within the company in order to bring the best possible outcome upon clients' requests. Our team also assist in our company's internal projects such as traditional Chinese New Year's Fai Chun (揮春) and calendars.";
                 description.setAttribute('data-translate', 'teams.creative.description');
             } else if (team === 'account') {
                 title.textContent = 'ACCOUNT SERVICING';
-                description.textContent = "Upon receipt of job requests from clients, AS team will take over the lead role in the coordination among departments of the company, ensuring that all the tasks will be finished on time without any hassle.";
+                description.textContent = "Our accounting servicing team takes pride in well-mannered coordination not only with clients but also within our company, as well as liaising with our translation vendors. We take lead in ensuring all tasks be completed on time, meeting tight schedules and delivering accurate e-submission on a daily basis. Our team has also shown versatile quality in order to meet with new requirements and mandate as new sphere of regulations has emerged due to the current change of economical scope.";
                 description.setAttribute('data-translate', 'teams.account.description');
             } else if (team === 'desktop') {
                 title.textContent = 'DESKTOP PUBLISHING';
-                description.textContent = "Experience makes an enormous contribution to accuracy and which in turn speeds up the whole typesetting process.";
+                description.textContent = "Our DTP team has years of typesetting experience in financial printing domain. With up-to-date software implemented from time to time, together with the assistance from our IT department, our team is dedicated to prompt delivery of documentations to meet deadline submissions.";
                 description.setAttribute('data-translate', 'teams.desktop.description');
-            } else if (team === 'translation') {
-                title.textContent = 'TRANSLATION';
-                description.textContent = "As clients from different geographical regions have varied demand for translation services with different language pairs and areas of expertise, we are dedicated to working with our translation partners to accommodate our clients' individual needs.";
-                description.setAttribute('data-translate', 'teams.translation.description');
-            } else {
+            } else if (team === 'proofread') {
+                title.textContent = 'PROOFREADING';
+                description.textContent = "Our proofread team is known for being detail-oriented, precise and attentive. We pursue consistency and accuracy in clients' documents. Attention to detail, submissive yet proficient to offer better solutions to our clients - we act as the semi-final gatekeeper to reassure the quality of work, especially showing highly competence to work under tight schedule whilst ability in meeting deadlines as required by HKEx regulations.";
+                description.setAttribute('data-translate', 'teams.proofread.description');
+            } else if (team === 'teams') {
                 title.textContent = 'Our Teams';
-                description.textContent = "Differentiating from our industry peers who focus solely on technology, we consider our talented staff the most treasured asset.";
+                description.textContent = "JAN values the significance of obtaining talented staff as the most impeccable asset of our company.";
                 description.setAttribute('data-translate', 'teams.description');
             }
             
