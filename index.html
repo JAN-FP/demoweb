@@ -183,12 +183,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="news-swiper swiper">
-                        <div class="swiper-wrapper">
-                            <!-- Cards will be loaded here -->
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                    <!-- Cards will be loaded here -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                     </div>
+                    <div class="link-news"></div>
                 </div>
             </div>
         </div>
@@ -243,21 +244,21 @@
     
     <!-- Swiper Initialization -->
     <script>
-        // 初始化 Swiper
-        var swiper = new Swiper(".news-swiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                992: {
-                    slidesPerView: 3,
-                }
-            }
-        });
+                // 初始化 Swiper
+                var swiper = new Swiper(".news-swiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints: {
+                        992: {
+                            slidesPerView: 3,
+                        }
+                    }
+                });
 
         // 載入卡片內容
         fetch('card.html')
@@ -266,6 +267,13 @@
                 document.querySelector('.swiper-wrapper').innerHTML = data;
                 // 重新初始化語言設置
                 initializeLanguage();
+
+                // 為每個卡片添加點擊事件
+                document.querySelectorAll('.swiper-slide .card').forEach(card => {
+                    card.addEventListener('click', () => {
+                        window.location.href = 'news.html';
+                    });
+                });
             })
             .catch(error => console.error('Error loading cards:', error));
 
@@ -388,6 +396,31 @@
         document.querySelector('.photo-album-overlay').addEventListener('click', closePhotoAlbum);
         document.querySelector('.photo-album-next').addEventListener('click', nextPhoto);
         document.querySelector('.photo-album-prev').addEventListener('click', prevPhoto);
+    </script>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top">
+        <img src="images/top.png" alt="Scroll to Top">
+    </button>
+
+    <script>
+        // 顯示或隱藏滾動到頂部按鈕
+        window.addEventListener('scroll', function() {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 200) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        // 滾動到頂部功能
+        document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 </html>

@@ -581,12 +581,21 @@ h2 {
     transform: translateX(5%);
 }
 
+/* Navbar Toggler Styles */
 .navbar-toggler {
     margin-left: 0;
     order: 2;
     border: none;
     padding: 0;
     box-shadow: none !important;
+    background: transparent;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* 使用 space-around 來均勻分布 */
 }
 
 .navbar-toggler:focus {
@@ -594,8 +603,27 @@ h2 {
     box-shadow: none;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23B08404' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+.navbar-toggler span {
+    display: block;
+    height: 4px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.navbar-toggler span:nth-child(1) {
+    width: 30px; /* 長 */
+}
+
+.navbar-toggler span:nth-child(2) {
+    width: 20px; /* 中 */
+}
+
+.navbar-toggler span:nth-child(3) {
+    width: 10px; /* 短 */
+}
+
+.navbar-toggler:hover span {
+    width: 30px; /* 全部變長 */
 }
 
 .services-left {
@@ -1238,4 +1266,37 @@ h2 {
     color: #666;
     line-height: 1.8;
     margin-bottom: 2rem;
+}
+
+/* Scroll to Top Button Styles */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    padding: 0; /* 確保按鈕本身沒有 padding */
+}
+
+.scroll-to-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0; /* 確保圖片沒有 padding */
+    margin: 0; /* 確保圖片沒有 margin */
+}
+
+.scroll-to-top.show {
+    display: block;
+    opacity: 0.8;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
 }
