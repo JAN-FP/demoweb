@@ -1300,3 +1300,10 @@ h2 {
 .scroll-to-top:hover {
     opacity: 1;
 }
+
+/* 小螢幕適配 */
+@media (max-width: 768px) {
+    .photo-album-close {
+        top: 20%; /* 當螢幕寬度小於 768px 時，將按鈕位置設置為螢幕由頂而下 20% */
+    }
+}
