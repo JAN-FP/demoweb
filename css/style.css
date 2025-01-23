@@ -934,8 +934,8 @@ h2 {
 
 .popup-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     font-size: 30px;
     background: none;
     border: none;
@@ -1183,8 +1183,8 @@ h2 {
 
 .photo-album-close {
     position: absolute;
-    top: -40px;
-    right: 0;
+    top: 10px;
+    right: 10px;
     font-size: 30px;
     color: white;
     background: none;
